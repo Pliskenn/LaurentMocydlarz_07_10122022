@@ -1,0 +1,17 @@
+.App
+{   
+    margin: 0;
+}
+
+body {
+    margin: auto;
+}
+
+.content
+{
+    max-width: 1040px;
+    margin: auto;
+    padding: 0;
+}
+
+

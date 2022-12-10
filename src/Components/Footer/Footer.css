@@ -1,0 +1,12 @@
+.footer_container {
+    background-color: black;
+    text-align: center;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_text {
+    color: white;
+}
