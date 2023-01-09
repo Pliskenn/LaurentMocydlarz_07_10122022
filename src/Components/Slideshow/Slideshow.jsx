@@ -19,7 +19,7 @@ function Slideshow(props) {
     <>
     {props.images?.length && <div>
       <button onClick={previous}>Précédente</button>
-      <img src={props.images[currentIndex]} alt="Slideshow" />
+      <img className="slideImg" src={props.images[currentIndex]} alt="Slideshow" />
       <button onClick={next}>Suivante</button>
     </div>}
     </>
