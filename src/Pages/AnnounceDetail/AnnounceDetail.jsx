@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "../AnnounceDetail/AnnounceDetail.css"
 import axios from "axios";
 import Details from "../../Components/Details/Details"
 import Slideshow from "../../Components/Slideshow/Slideshow";
@@ -28,7 +29,9 @@ const AnnounceDetail = () => {
 
     return ( 
         <>
+        <div className="slideshow">
         <Slideshow images={announce.pictures}/>
+        </div>
         <Details announce={announce}/>
         </>
      );
