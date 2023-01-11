@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
+import leftArrow from "../../img/icons/leftArrow.png"
+import rightArrow from "../../img/icons/rightArrow.png"
+
 import "../Slideshow/Slideshow.css";
 
 function Slideshow(props) {
@@ -17,10 +18,10 @@ function Slideshow(props) {
 
   return (
     <>
-    {props.images?.length && <div>
-      <button onClick={previous}>Précédente</button>
+    {props.images?.length && <div className="slideblock">
+      <button className="arrow leftArrow" onClick={previous}><img src={leftArrow} alt="logo"></img></button>
       <img className="slideImg" src={props.images[currentIndex]} alt="Slideshow" />
-      <button onClick={next}>Suivante</button>
+      <button className="arrow rightArrow" onClick={next}><img src={rightArrow} alt="logo"></img></button>
     </div>}
     </>
   );

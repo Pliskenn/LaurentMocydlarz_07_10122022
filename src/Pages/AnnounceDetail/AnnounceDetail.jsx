@@ -5,6 +5,7 @@ import axios from "axios";
 import Details from "../../Components/Details/Details"
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import Dropdown from "../../Components/Dropdown/Dropdown";
+import Rating from "../../Components/Rating/Rating";
 
 const AnnounceDetail = () => {
 
@@ -33,6 +34,7 @@ const AnnounceDetail = () => {
         <Slideshow images={announce.pictures}/>
         </div>
         <Details announce={announce}/>
+        <Rating rating={announce.rating}/>
         </>
      );
 }

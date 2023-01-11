@@ -1,3 +1,31 @@
 .slideImg {
-    width: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 415px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.slideblock {
+  position: relative;
+}
+
+.arrow {
+  border: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  top: 0%;
+  bottom: 0%;
+  background: transparent;
+}
+
+.arrow > img {
+  height: 79.19999694824219px;
+  width: 46.68000411987305px;
+}
+
+.rightArrow {
+  right: 0;
 }
