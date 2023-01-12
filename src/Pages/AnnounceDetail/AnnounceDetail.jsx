@@ -33,7 +33,8 @@ const AnnounceDetail = () => {
         <div className="slideshow">
         <Slideshow images={announce.pictures}/>
         </div>
-        <Details announce={announce}/>
+        {/* {<Details announce={announce}/>} */}
+        <Dropdown title={announce.title}><p>Test</p></Dropdown>
         <Rating rating={announce.rating}/>
         </>
      );

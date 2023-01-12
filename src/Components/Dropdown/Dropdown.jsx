@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { children, useState } from 'react';
+import Details from '../Details/Details';
 
-function Dropdown() {
+function Dropdown({title, children}) {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleDropdown() {
@@ -9,13 +10,11 @@ function Dropdown() {
 
   return (
     <div>
-      <button onClick={toggleDropdown}>Toggle dropdown</button>
+      <button onClick={toggleDropdown}><h2>{title}</h2></button>
       {isOpen && (
-        <ul>
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
-        </ul>
+        <div>
+          {children}
+        </div>
       )}
     </div>
   );
