@@ -12,6 +12,7 @@ function Details(props) {
 
         <div>
             <h2>{props.announce.title}</h2>
+            
             <p>{props.announce.description}</p>
             <ul>
             {props.announce?.equipments?.map((equipment) => {
