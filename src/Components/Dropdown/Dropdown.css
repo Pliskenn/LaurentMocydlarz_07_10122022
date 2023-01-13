@@ -1,0 +1,12 @@
+.dropdown {
+    max-width: 1023px;
+    background: #FF6060;
+    border-radius: 10px;
+    border: none;
+
+    
+}
+
+.dropdown > p {
+    color: white;
+}
