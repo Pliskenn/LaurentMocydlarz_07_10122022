@@ -27,25 +27,44 @@ const AnnounceDetail = () => {
 
   return (
     <>
+      {/* Slideshow */}
       <div className="slideshow">
         <Slideshow images={announce.pictures} />
       </div>
+      {/* Bloc informations */}
       <div>
-        {announce.title}
-        {announce.location}
-        {announce?.host?.name}
-        <img src={announce?.host?.picture} alt="Propriétaire" />
-        <Rating rating={announce.rating} />
-        <Dropdown title="Description">
-          <p>{announce.description}</p>
-        </Dropdown>
-        <Dropdown title="Equipements">
-          <p>
-            {announce?.equipments?.map((equipment) => {
-              return <li key={equipment.toString()}>{equipment}</li>;
-            })}
-          </p>
-        </Dropdown>
+        <div className="informations">
+          {/* Bloc titre + localisation */}
+          <div>
+            <div>{announce.title}</div>
+            <div>{announce.location}</div>
+          </div>
+          {/* Bloc photo + nom du propriétaire + note */}
+          <div>
+          <div className="bloc-picture-name">
+            <div>{announce?.host?.name}</div>
+            <img src={announce?.host?.picture} alt="Propriétaire" />
+            </div>
+            <div>
+              <Rating rating={announce.rating} />
+            </div>
+          </div>
+        </div>
+        {/* Bloc dropdown */}
+        <div>
+          <Dropdown title="Description">
+            <p>{announce.description}</p>
+          </Dropdown>
+        </div>
+        <div>
+          <Dropdown title="Equipements">
+            <p>
+              {announce?.equipments?.map((equipment) => {
+                return <li key={equipment.toString()}>{equipment}</li>;
+              })}
+            </p>
+          </Dropdown>
+        </div>
       </div>
     </>
   );

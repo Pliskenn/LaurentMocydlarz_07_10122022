@@ -1,9 +1,28 @@
 .slideshow {
-    max-height: 500px;
-    object-fit: cover;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .slideshow > img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc-picture-name {
+  width: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bloc-picture-name > img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  margin-left: 10px;
 }
