@@ -5,6 +5,8 @@ import axios from "axios";
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Rating from "../../Components/Rating/Rating";
+import Tags from "../../Components/Tags/Tags";
+
 
 const AnnounceDetail = () => {
   const [announce, setAnnounce] = useState({});
@@ -36,8 +38,9 @@ const AnnounceDetail = () => {
         <div className="informations">
           {/* Bloc titre + localisation */}
           <div>
-            <div>{announce.title}</div>
-            <div>{announce.location}</div>
+            <div><h2>{announce.title}</h2></div>
+            <div><h3>{announce.location}</h3></div>
+            <div className="tags"><Tags tags={announce.tags}/></div>
           </div>
           {/* Bloc photo + nom du propriétaire + note */}
           <div>
@@ -58,11 +61,11 @@ const AnnounceDetail = () => {
         </div>
         <div>
           <Dropdown title="Equipements">
-            <p>
+            <ul>
               {announce?.equipments?.map((equipment) => {
                 return <li key={equipment.toString()}>{equipment}</li>;
               })}
-            </p>
+            </ul>
           </Dropdown>
         </div>
       </div>

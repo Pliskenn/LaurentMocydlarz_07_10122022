@@ -1,0 +1,25 @@
+.tags {
+    padding-left: 0;
+}
+
+.tag-content {
+    display: flex;
+    padding-left: 0;
+}
+
+.tag {
+    padding: 10px 10px;
+    margin-right: 10px;
+    background: #FF6060;
+    border-radius: 10px;
+    border: none;
+    height: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.tag > p {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}

@@ -8,9 +8,9 @@ function Rating(props) {
 
   for (let i = 0; i < 5; i++) {
     if (i < rate) {
-      stars.push(<img src={trueStar} alt="Full star" key={i} />);
+      stars.push(<img className="star" src={trueStar} alt="Full star" key={i} />);
     } else {
-      stars.push(<img src={falseStar} alt="Empty star" key={i} />);
+      stars.push(<img className="star" src={falseStar} alt="Empty star" key={i} />);
     }
   }
 

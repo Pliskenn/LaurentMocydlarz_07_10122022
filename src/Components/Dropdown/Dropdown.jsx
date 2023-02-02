@@ -1,4 +1,6 @@
 import React, { children, useState } from "react";
+import arrowUp from "../../img/icons/arrowUp.png";
+import arrowDown from "../../img/icons/arrowDown.png";
 import "./Dropdown.css";
 
 function Dropdown({ title, children }) {
@@ -11,7 +13,8 @@ function Dropdown({ title, children }) {
   return (
     <div>
         <button className="dropdown" onClick={toggleDropdown}>
-          <p>{title}</p>
+        {/* src={isOpen? arrow : arrowDown}  */}
+          <p>{title}</p><img className="dropdown-arrow" src={isOpen? arrowUp : arrowDown} alt="Flêche"></img>
         </button>
       {isOpen && <div>{children}</div>}
     </div>

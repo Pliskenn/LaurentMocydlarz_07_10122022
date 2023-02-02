@@ -6,3 +6,7 @@ code {
 h1, h2, h3, p, a {
   font-family: 'Montserrat', sans-serif;
 }
+
+ul {
+  list-style-type: none;
+}

@@ -6,7 +6,7 @@ import Grid from '../../Components/Grid/Grid';
 const Home = () => {
     return ( 
         <>
-        <Banner />
+        <Banner title="Chez vous, partout et ailleurs"/>
         <Grid />
         </>
      );
