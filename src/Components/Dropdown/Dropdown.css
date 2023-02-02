@@ -7,6 +7,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+  margin-bottom: 0;
+  position: sticky;
 }
 
 .dropdown > p {
@@ -18,11 +20,19 @@
   border-radius: 0px;
 }
 
-h2,
-h3 {
-  color: rgba(255, 96, 96, 1);
+.dropdown-content {
+  background: #f7f7f7;
+  border-radius: 0 0 25px 25px;
+  padding: 10px 20px;
+  padding-top: 20px;
+  margin-top: -10px;
 }
+.dropdown-content > p, li {
+    color:#ff6060;
+    font-size: 18px;
+  }
 
-h3 {
-  font-size: 18px;
+.dropdown-content > ul {
+  margin: 0;
+  padding: 0;
 }

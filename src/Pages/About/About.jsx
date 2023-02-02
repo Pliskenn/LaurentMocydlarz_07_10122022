@@ -1,11 +1,14 @@
 import React from "react";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Banner from "../../Components/Banner/Banner"
+import "../About/About.css";
+
 
 const About = () => {
   return (
     <div className="about">
-    <Banner />
+        <Banner title=""/>
+    <div className="about-content">
       <Dropdown title={"Fiabilité"}>
         <p>
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les
@@ -37,6 +40,7 @@ const About = () => {
           sur la sécurité domestique pour nos hôtes."
         </p>
       </Dropdown>
+    </div>
     </div>
   );
 };

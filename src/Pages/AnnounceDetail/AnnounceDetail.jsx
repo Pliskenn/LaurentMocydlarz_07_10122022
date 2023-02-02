@@ -45,7 +45,7 @@ const AnnounceDetail = () => {
           {/* Bloc photo + nom du propriétaire + note */}
           <div>
           <div className="bloc-picture-name">
-            <div>{announce?.host?.name}</div>
+            <div><h3>{announce?.host?.name}</h3></div>
             <img src={announce?.host?.picture} alt="Propriétaire" />
             </div>
             <div>

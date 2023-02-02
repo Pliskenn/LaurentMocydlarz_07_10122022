@@ -16,7 +16,7 @@ function Dropdown({ title, children }) {
         {/* src={isOpen? arrow : arrowDown}  */}
           <p>{title}</p><img className="dropdown-arrow" src={isOpen? arrowUp : arrowDown} alt="Flêche"></img>
         </button>
-      {isOpen && <div>{children}</div>}
+      {isOpen && <div className="dropdown-content">{children}</div>}
     </div>
   );
 }

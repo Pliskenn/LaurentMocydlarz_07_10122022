@@ -7,6 +7,16 @@ h1, h2, h3, p, a {
   font-family: 'Montserrat', sans-serif;
 }
 
+h2,
+h3 {
+  color: rgba(255, 96, 96, 1);
+  margin: 10px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 ul {
   list-style-type: none;
 }

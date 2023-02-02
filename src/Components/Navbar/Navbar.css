@@ -24,6 +24,9 @@ h1 {
   align-items: center;
 }
 
+
+
+
 .navbar a,
 .navbar a:focus {
   display: flex;
@@ -41,11 +44,15 @@ h1 {
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .logo_img {
-    object-fit: cover;
-    max-height: 48px;
-    width: 100%;
+  object-fit: cover;
+  max-height: 48px;
+  width: 100%;
+}
+
+.navbar a.active-link {
+  text-decoration: underline;
 }
