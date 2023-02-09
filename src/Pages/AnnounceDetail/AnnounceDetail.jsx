@@ -7,7 +7,6 @@ import Dropdown from "../../Components/Dropdown/Dropdown";
 import Rating from "../../Components/Rating/Rating";
 import Tags from "../../Components/Tags/Tags";
 
-
 const AnnounceDetail = () => {
   const [announce, setAnnounce] = useState({});
   const { id } = useParams();
@@ -15,7 +14,7 @@ const AnnounceDetail = () => {
 
   useEffect(() => {
     if (id) getAnnounce(id);
-  }, [id]);
+  });
 
   const getAnnounce = async (id) => {
     const result = await axios("http://localhost:3000/data/logements.json");
@@ -34,19 +33,27 @@ const AnnounceDetail = () => {
         <Slideshow images={announce.pictures} />
       </div>
       {/* Bloc informations */}
-      <div>
-        <div className="informations">
+      <div className="block-infos">
+        <div className="informations-content">
           {/* Bloc titre + localisation */}
-          <div>
-            <div><h2>{announce.title}</h2></div>
-            <div><h3>{announce.location}</h3></div>
-            <div className="tags"><Tags tags={announce.tags}/></div>
+          <div className="location">
+            <div>
+              <h2>{announce.title}</h2>
+            </div>
+            <div>
+              <h3>{announce.location}</h3>
+            </div>
+            <div className="tags">
+              <Tags tags={announce.tags} />
+            </div>
           </div>
           {/* Bloc photo + nom du propriétaire + note */}
-          <div>
-          <div className="bloc-picture-name">
-            <div><h3>{announce?.host?.name}</h3></div>
-            <img src={announce?.host?.picture} alt="Propriétaire" />
+          <div className="host-rating">
+            <div className="bloc-picture-name">
+              <div className="informations-titles">
+                <h3>{announce?.host?.name}</h3>
+              </div>
+              <img src={announce?.host?.picture} alt="Propriétaire" />
             </div>
             <div>
               <Rating rating={announce.rating} />
@@ -54,19 +61,21 @@ const AnnounceDetail = () => {
           </div>
         </div>
         {/* Bloc dropdown */}
-        <div>
-          <Dropdown title="Description">
-            <p>{announce.description}</p>
-          </Dropdown>
-        </div>
-        <div>
-          <Dropdown title="Equipements">
-            <ul>
-              {announce?.equipments?.map((equipment) => {
-                return <li key={equipment.toString()}>{equipment}</li>;
-              })}
-            </ul>
-          </Dropdown>
+        <div className="dropdown-block">
+          <div className="dropdown-details">
+            <Dropdown title="Description">
+              <p>{announce.description}</p>
+            </Dropdown>
+          </div>
+          <div className="dropdown-details">
+            <Dropdown title="Equipements">
+              <ul>
+                {announce?.equipments?.map((equipment) => {
+                  return <li key={equipment.toString()}>{equipment}</li>;
+                })}
+              </ul>
+            </Dropdown>
+          </div>
         </div>
       </div>
     </>

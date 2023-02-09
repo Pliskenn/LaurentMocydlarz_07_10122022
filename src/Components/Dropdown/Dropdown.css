@@ -23,16 +23,20 @@
 .dropdown-content {
   background: #f7f7f7;
   border-radius: 0 0 25px 25px;
-  padding: 10px 20px;
-  padding-top: 20px;
+  padding: 20px 10px 1px 10px;
   margin-top: -10px;
 }
 .dropdown-content > p, li {
     color:#ff6060;
     font-size: 18px;
+    margin: 0 10px 10px 10px;
   }
 
 .dropdown-content > ul {
   margin: 0;
   padding: 0;
+}
+
+.button-content {
+  width: 100%;
 }

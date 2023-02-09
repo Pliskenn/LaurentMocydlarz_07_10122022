@@ -29,3 +29,15 @@
 .rightArrow {
   right: 0;
 }
+
+.slideshow {
+  max-height: 500px;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slideshow > img {
+  width: 100%;
+  object-fit: cover;
+}

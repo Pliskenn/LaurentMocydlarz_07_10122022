@@ -9,8 +9,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background: #F7F7F7;
-border-radius: 25px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .cards,
@@ -21,9 +23,12 @@ border-radius: 25px;
   flex: 1 1 340px;
   position: relative;
   margin-bottom: 20px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-size: cover!important;
-
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background-size: cover !important;
 }
 
 .bloc_title {

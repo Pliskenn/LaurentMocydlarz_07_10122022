@@ -11,7 +11,7 @@ function Dropdown({ title, children }) {
   }
 
   return (
-    <div>
+    <div className="button-content">
         <button className="dropdown" onClick={toggleDropdown}>
         {/* src={isOpen? arrow : arrowDown}  */}
           <p>{title}</p><img className="dropdown-arrow" src={isOpen? arrowUp : arrowDown} alt="Flêche"></img>

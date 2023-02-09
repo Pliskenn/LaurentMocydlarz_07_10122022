@@ -3,7 +3,7 @@ import "./Banner.css";
 import body_img from "../../img/body_img.jpg"
 
 
-function Home({title, bgimage}) {
+function Banner({title, bgimage}) {
     return ( 
         <>
         <div className="home_container">
@@ -14,4 +14,4 @@ function Home({title, bgimage}) {
      );
 }
 
-export default Home;
+export default Banner;

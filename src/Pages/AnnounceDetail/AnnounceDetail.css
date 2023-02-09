@@ -1,14 +1,14 @@
-.slideshow {
-  max-height: 500px;
-  object-fit: cover;
-}
-
-.slideshow > img {
-  width: 100%;
-  object-fit: cover;
-}
 
 .informations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informations-titles > H2, H3 {
+  margin: 0;
+}
+
+.informations-content {
   display: flex;
   justify-content: space-between;
 }
@@ -25,4 +25,36 @@
   width: 64px;
   height: 64px;
   margin-left: 10px;
+}
+
+.dropdown-block {
+  display: flex;
+  column-gap: 60px;
+}
+
+.dropdown-details {
+  display: flex;
+  flex: 1;
+}
+
+.block-infos {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .dropdown-block {
+    flex-direction: column;
+  }
+
+  .informations-content {
+    flex-direction: column;
+  }
+
+  .host-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

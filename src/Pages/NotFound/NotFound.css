@@ -6,4 +6,23 @@
   letter-spacing: 0em;
   text-align: center;
   color: rgba(255, 96, 96, 1);
+  margin: 0;
+}
+
+.notfound-subtext {
+  text-align: center;
+  color: rgba(255, 96, 96, 1);
+  font-size: 36px;
+}
+
+@media screen and (max-width: 900px) {
+  .NotFound {
+    font-size: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NotFound {
+    font-size: 120px;
+  }
 }
