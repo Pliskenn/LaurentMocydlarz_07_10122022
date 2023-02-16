@@ -15,6 +15,11 @@
   color: white;
 }
 
+.dropdown-title {
+  font-size: 24px;
+  margin: 0;
+}
+
 .dropdown-arrow {
   width: 15px;
   border-radius: 0px;
@@ -29,7 +34,7 @@
 .dropdown-content > p, li {
     color:#ff6060;
     font-size: 18px;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px;
   }
 
 .dropdown-content > ul {

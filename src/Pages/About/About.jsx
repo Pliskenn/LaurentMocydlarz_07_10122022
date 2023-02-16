@@ -9,7 +9,7 @@ const About = () => {
     <div className="about">
         <Banner title=""/>
     <div className="about-content">
-      <Dropdown title={"Fiabilité"}>
+      <Dropdown title={"Fiabilité"} className="dropdown-about">
         <p>
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les
           photos sont conformes aux logements, et toutes les informations sont

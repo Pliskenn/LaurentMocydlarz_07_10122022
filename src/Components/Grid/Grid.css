@@ -41,4 +41,18 @@
 .bloc_title h3 {
   font-size: 18px;
   color: white;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .cards,
+  .cards > a {
+    height: 245px;
+  }
+
+  .cards_container {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

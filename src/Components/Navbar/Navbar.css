@@ -32,7 +32,6 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 24px;
-  font-size: 15px;
   white-space: nowrap;
   transition: 0.3s;
   text-decoration: none;
@@ -54,4 +53,13 @@ h1 {
 
 .navbar a.active-link {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a,
+  .navbar a:focus {
+    font-size: 18px;
+    margin: 10px;
+    padding: 0;
+  }
 }

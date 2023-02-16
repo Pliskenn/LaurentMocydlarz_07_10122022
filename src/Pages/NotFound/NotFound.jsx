@@ -9,8 +9,8 @@ const NotFound = () => {
       <p className="notfound-subtext">
         Oups! La page que vous demandez n'existe pas.
       </p>
-      <h3>
-        <NavLink to="/">Accueil</NavLink>
+      <h3 className="return-home">
+        <NavLink to="/">Retourner sur la page d'accueil</NavLink>
       </h3>
     </>
   );

@@ -15,14 +15,26 @@
   font-size: 36px;
 }
 
+.return-home,
+.return-home a {
+  text-align: center;
+  color: rgba(255, 96, 96, 1);
+  font-size: 18px;
+}
+
 @media screen and (max-width: 900px) {
   .NotFound {
     font-size: 180px;
+    margin: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .NotFound {
     font-size: 120px;
+  }
+  .return-home,
+  .return-home a {
+    font-size: 14px;
   }
 }
