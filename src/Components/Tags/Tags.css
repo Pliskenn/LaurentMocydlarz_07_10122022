@@ -6,6 +6,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-bottom: 0;
+}
+
+.tag-content > li {
+    margin-bottom: 10px;
 }
 
 .tag {

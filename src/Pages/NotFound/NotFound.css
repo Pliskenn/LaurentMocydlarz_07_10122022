@@ -25,7 +25,12 @@
 @media screen and (max-width: 900px) {
   .NotFound {
     font-size: 180px;
+    line-height: 150px;
     margin: 20px;
+  }
+  .notfound-subtext {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 

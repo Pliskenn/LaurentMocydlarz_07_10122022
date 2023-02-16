@@ -38,7 +38,7 @@ const AnnounceDetail = () => {
           {/* Bloc titre + localisation */}
           <div className="location">
             <div>
-              <h2>{announce.title}</h2>
+              <h2 className="location-title">{announce.title}</h2>
             </div>
             <div>
               <h3>{announce.location}</h3>

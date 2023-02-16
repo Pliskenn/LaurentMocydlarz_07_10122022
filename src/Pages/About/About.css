@@ -3,6 +3,7 @@
     margin: auto;
 }
 
+
 @media screen and (max-width: 1080px) {
     .about-content {
         margin-left: 20px;
