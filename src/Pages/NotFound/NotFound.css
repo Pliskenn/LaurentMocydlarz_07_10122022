@@ -1,4 +1,4 @@
-.NotFound {
+.not-found {
   font-family: Montserrat;
   font-size: 288px;
   font-weight: 700;
@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-.notfound-subtext {
+.not-found-subtext {
   text-align: center;
   color: rgba(255, 96, 96, 1);
   font-size: 36px;
@@ -23,23 +23,31 @@
 }
 
 @media screen and (max-width: 900px) {
-  .NotFound {
+  .not-found {
     font-size: 180px;
     line-height: 150px;
     margin: 20px;
   }
-  .notfound-subtext {
+  .not-found-subtext {
     font-size: 20px;
     margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .NotFound {
-    font-size: 120px;
+@media screen and (max-width: 900px) {
+  .not-found {
+    font-size: 96px;
+    margin-top: 50px;
+  }
+
+  .not-found-subtext {
+    font-size: 18px;
   }
   .return-home,
   .return-home a {
+    margin-top: 100px;
     font-size: 14px;
   }
 }
