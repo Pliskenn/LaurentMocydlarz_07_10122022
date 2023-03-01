@@ -7,7 +7,7 @@ import "../About/About.css";
 const About = () => {
   return (
     <div className="about">
-        <Banner title=""/>
+        <Banner title="" />
     <div className="about-content">
       <Dropdown title={"Fiabilité"} className="dropdown-about">
         <p>
