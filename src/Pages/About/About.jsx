@@ -1,13 +1,14 @@
 import React from "react";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Banner from "../../Components/Banner/Banner"
+import BannerAbout from "../../img/banner_about.jpg"
 import "../About/About.css";
 
 
 const About = () => {
   return (
     <div className="about">
-        <Banner title="" />
+        <Banner image={BannerAbout} title="" />
     <div className="about-content">
       <Dropdown title={"Fiabilité"} className="dropdown-about">
         <p>

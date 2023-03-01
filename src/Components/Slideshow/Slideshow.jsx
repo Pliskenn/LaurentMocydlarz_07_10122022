@@ -21,6 +21,7 @@ function Slideshow(props) {
     {props.images?.length >1 && ( <div className="slideblock">
       <button className="arrow leftArrow" onClick={previous}><img src={leftArrow} alt="Précédent"></img></button>
       <img className="slideImg" src={props.images[currentIndex]} alt="Slideshow" />
+      <p className="counter">{currentIndex + 1}/{props.images.length}</p> 
       <button className="arrow rightArrow" onClick={next}><img src={rightArrow} alt="Suivant"></img></button>
     </div>)}
       {props.images?.length ===1 &&( <div className="slideblock">

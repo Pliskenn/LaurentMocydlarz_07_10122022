@@ -39,4 +39,9 @@
     font-size: 25px;
     margin: 30px;
   }
+  .body_img {
+    height: 223px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 }
