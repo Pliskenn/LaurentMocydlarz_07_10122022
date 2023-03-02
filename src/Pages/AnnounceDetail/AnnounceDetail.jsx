@@ -8,7 +8,7 @@ import Rating from "../../Components/Rating/Rating";
 import Tags from "../../Components/Tags/Tags";
 
 const AnnounceDetail = () => {
-  const [announce, setAnnounce] = useState(null);
+  const [announce, setAnnounce] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
@@ -77,7 +77,7 @@ const AnnounceDetail = () => {
             </Dropdown>
           </div>
         </div>
-      </div>
+      </div>  
     </>
   );
 };
