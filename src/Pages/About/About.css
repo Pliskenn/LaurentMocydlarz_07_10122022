@@ -3,6 +3,21 @@
     margin: auto;
 }
 
+.background-about{
+    height: 223px;
+
+}
+
+.about .home_container {
+    height: 223px;
+    object-fit: cover;
+}
+
+.about .body_img {
+    object-fit: cover;
+    max-height: 100%;
+}
+
 
 @media screen and (max-width: 1080px) {
     .about-content {

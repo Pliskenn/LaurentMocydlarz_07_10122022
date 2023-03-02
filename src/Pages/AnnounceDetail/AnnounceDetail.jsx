@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "../AnnounceDetail/AnnounceDetail.css";
-import axios from "axios";
+import NotFound from "../NotFound/NotFound";
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Rating from "../../Components/Rating/Rating";
 import Tags from "../../Components/Tags/Tags";
 
 const AnnounceDetail = () => {
-  const [announce, setAnnounce] = useState({});
+  const [announce, setAnnounce] = useState(null);
   const { id } = useParams();
-  let navigate = useNavigate();
 
   useEffect(() => {
     if (id) getAnnounce(id);
   });
 
   const getAnnounce = async (id) => {
-    const result = await axios("http://localhost:3000/data/logements.json");
-    const item = result.data.find((element) => element.id === id);
-    if (item === null || item === undefined) {
-      navigate("/NotFound");
-      return;
+    try {
+      const response = await fetch('http://localhost:3000/data/logements.json');
+      const result = await response.json();
+      const item = result.find((element) => element.id === id);
+      setAnnounce(item);
+    } catch (error) {
+      console.error(error);
     }
-    setAnnounce(item);
   };
 
-  return (
+  return (announce === null || announce === undefined)?<NotFound />: (
     <>
       {/* Slideshow */}
       <div className="slideshow">

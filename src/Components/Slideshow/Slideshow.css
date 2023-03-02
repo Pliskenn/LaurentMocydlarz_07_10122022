@@ -19,6 +19,7 @@
   top: 0%;
   bottom: 0%;
   background: transparent;
+  cursor: grab;
 }
 
 .arrow > img {
@@ -48,6 +49,7 @@
     left: 50%;
     background: transparent;
     color: white;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 600px) {

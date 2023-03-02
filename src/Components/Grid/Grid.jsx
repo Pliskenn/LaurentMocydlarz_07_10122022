@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./Grid.css";
 
 function Grid() {
@@ -8,9 +7,9 @@ function Grid() {
 
   const fetchData = async () => {
     try {
-      const result = await axios("http://localhost:3000/data/logements.json");
-      console.log(result);
-      setData(result.data);
+      const response = await fetch("http://localhost:3000/data/logements.json");
+      const result = await response.json();
+      setData(result);
     } catch (error) {}
   };
 

@@ -17,6 +17,7 @@
 .dropdown-arrow {
   width: 15px;
   border-radius: 0px;
+  cursor: grab;
 }
 
 .dropdown-content {
