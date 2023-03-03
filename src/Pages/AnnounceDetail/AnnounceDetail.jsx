@@ -8,25 +8,37 @@ import Rating from "../../Components/Rating/Rating";
 import Tags from "../../Components/Tags/Tags";
 
 const AnnounceDetail = () => {
-  const [announce, setAnnounce] = useState({});
+  const [announce, setAnnounce] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    if (id) getAnnounce(id);
-  });
-
-  const getAnnounce = async (id) => {
+  const getAnnounce = async () => {
     try {
       const response = await fetch('http://localhost:3000/data/logements.json');
       const result = await response.json();
       const item = result.find((element) => element.id === id);
-      setAnnounce(item);
+      if (item) {
+        setAnnounce(item);
+      } else {
+        setAnnounce(false)
+      }
     } catch (error) {
       console.error(error);
     }
   };
 
-  return (announce === null || announce === undefined)?<NotFound />: (
+  if (id) getAnnounce();
+}, [id]);
+
+if (announce === false) {
+  return <NotFound />;
+}
+
+if (!announce){
+  return null;
+}
+
+  return (
     <>
       {/* Slideshow */}
       <div className="slideshow">
