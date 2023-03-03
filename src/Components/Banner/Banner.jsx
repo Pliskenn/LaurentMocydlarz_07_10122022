@@ -7,7 +7,7 @@ function Banner({title, image}) {
         <>
         <div className="home_container">
             <h2 className="title_body">{title}</h2>
-            <img className="body_img" src={image} alt="Bannière"></img>
+            <img className="body_img" src={image} alt="Bannière" />
         </div>
         </>
      );
